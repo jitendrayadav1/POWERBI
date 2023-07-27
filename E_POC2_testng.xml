@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.E_POC2.Utility.Demo_ExtentReport">
+		</listener>
+	</listeners>
+	<test thread-count="5" name="CompatibilityTestingOnChrome">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.E_POC2.TestCases.PowerBIDashBoardTest1" />
+		</classes>
+		</test> 
+		
+<!-- 
+	 
+	<test thread-count="5" name="CompatibilityTestingOnFirefox">
+	<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.demoBlaze.TestCases.DemoBlazeTest" />
+		</classes>	
+	</test> 
+	 
+-->
+	
+</suite> 
